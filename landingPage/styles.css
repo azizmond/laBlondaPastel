@@ -1,0 +1,73 @@
+* { 
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Abril Fatface;
+}
+.bg-lineas-diagonales{
+    background: repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 40px,
+      rgba(0, 0, 0, 1) 60px,
+      #ffffff 60px,
+      #ffffff 80px
+    );
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 100%;
+    display: flex;
+    max-width: 1200px;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, .2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .6);
+    transform: translateY(-2%);
+}
+.card img{
+    width: 100%;
+    height: 250px;
+}
+.card .contain{
+    padding: 15px;
+    text-align: center;
+}
+.card .contain p{
+    line-height: 1.5;
+    color: #1b1b19;
+    font-family: Tahoma, sans-serif
+}
+.card .contain h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contain a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    background: #1b1b19;
+    color: #b09a64;
+    border: 1px solid #b09a64;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contain a:hover{
+    background: #b09a64;
+    color: #1b1b19;
+}
