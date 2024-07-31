@@ -23,6 +23,7 @@ body{
       #ffffff 80px
     );
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -90,6 +91,13 @@ body{
     width: 100%;
     border-radius: 400px;
 }
+.footer{
+    max-width: 100%;
+    background-color: var(--first-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+}
 .modal{
     position: fixed;
     z-index: 999;
@@ -124,7 +132,7 @@ body{
 }
 @media screen and (min-width: 1024px) {
     .container{
-        height: 100vh;
+        min-height: 100%;
         width: 100%;
         display: flex;
         flex-direction: row;
