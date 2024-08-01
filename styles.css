@@ -23,7 +23,6 @@ body{
       #ffffff 80px
     );
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -92,11 +91,18 @@ body{
     border-radius: 400px;
 }
 .footer{
-    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--first-color);
     color: #ffffff;
     text-align: center;
     padding: 8px;
+}
+.footer svg{
+    fill: var(--second-color);
 }
 .modal{
     position: fixed;
