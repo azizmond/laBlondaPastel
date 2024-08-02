@@ -3,6 +3,8 @@
     --first-alpha-color: rgba(27, 27, 25, 0.75);
     --second-color: #b09a64;
     --secondalpha-color: rgba(176, 154, 100, 0.75);
+    --first-font: Tahoma, sans-serif;
+    --second-font: Abril Fatface;
 }
 * { 
     margin:0;
@@ -11,16 +13,16 @@
 }
 body{
     width: 100%;
-    font-family: Tahoma, sans-serif;
+    font-family: var(--first-font);
     min-height: 100vh;
     position: relative;
     padding-bottom: 50px;
 }
 h1{
-    font-family: Abril Fatface;
+    font-family: var(--second-font);
 }
 h3{
-    font-family: Abril Fatface;
+    font-family: var(--second-font);
 }
 .bg-lineas-diagonales{
     background: repeating-linear-gradient(
@@ -61,7 +63,7 @@ h3{
 .card .contain p{
     line-height: 1.5;
     color: var(--first-color);
-    font-family: Tahoma, sans-serif
+    font-family: var(--first-font);
 }
 .card .contain h3{
     font-weight: 400;
@@ -73,6 +75,7 @@ h3{
     padding: 10px;
     margin-top: 10px;
     background: var(--first-color);
+    font-family: var(--second-font);
     color: var(--second-color);
     border: 1px solid var(--second-color);
     border-radius: 4px;
@@ -92,7 +95,7 @@ h3{
 }
 .card-modal p{
     text-align: center;
-    font-family: Tahoma, sans-serif;
+    font-family: var(--first-font);
 }
 .card-modal img{
     width: 100%;
