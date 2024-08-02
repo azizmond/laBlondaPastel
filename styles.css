@@ -11,8 +11,16 @@
 }
 body{
     width: 100%;
-    font-family: Abril Fatface;
+    font-family: Tahoma, sans-serif;
     min-height: 100vh;
+    position: relative;
+    padding-bottom: 50px;
+}
+h1{
+    font-family: Abril Fatface;
+}
+h3{
+    font-family: Abril Fatface;
 }
 .bg-lineas-diagonales{
     background: repeating-linear-gradient(
@@ -93,16 +101,22 @@ body{
 .footer{
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    align-items: center;
+    position: absolute;
     bottom: 0;
     width: 100%;
     background-color: var(--first-color);
     color: #ffffff;
+    font-size: 12px;
     text-align: center;
     padding: 8px;
 }
 .footer svg{
     fill: var(--second-color);
+    margin: 0 8px;
+}
+.footer a{
+    text-decoration: none;
 }
 .modal{
     position: fixed;
